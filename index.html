@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Formulario de Usuario</h1>
+
+  <form id="formulario">
+    <input type="text" id="nombre" placeholder="Nombre" required>
+    <p></p>
+    <input type="number" id="edad" placeholder="Edad" required>
+    <p></p>
+    <button type="submit">Guardar</button>
+  </form>
+
+  <p id="mensaje"></p>
+  <p id="error"></p>
+
+  <h2>Datos almacenados:</h2>
+  <div id="datosGuardados"></div>
+
+  <h2>Contador de interacciones (solo esta sesión):</h2>
+  <div id="contador"></div>
+
+  <button id="limpiar">Limpiar Local Storage</button>
+    
+  <script src="script.js"></script>
+</body>
+</html>

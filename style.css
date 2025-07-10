@@ -1,0 +1,107 @@
+body {
+    background: linear-gradient(to right, #141e30, #243b55);
+    font-family: 'Segoe UI', sans-serif;
+    color: #fff;
+    padding: 40px;
+}
+
+
+h1, h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #00ffe7;
+    text-shadow: 1px 1px #000;
+}
+
+form {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 25px;
+    border-radius: 2px;
+    box-shadow: 0 0 15px rgba(0, 255, 231, 0.3);
+    max-width: 500px;
+    margin: 0 auto 30px;
+}
+
+input[type="text"], input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 2px solid #00ffe7;
+    border-radius: 8px;
+    background-color: #1a1a1a;
+    color: #00ffe7;
+    font-size: 16px;
+}
+
+button {
+    padding: 12px 20px;
+    background-color: #00aaff;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    background-color: #008ecc;
+    transform: scale(1.05);
+}
+
+#limpiar {
+    background-color: #ff3c3c;
+}
+
+#limpiar:hover {
+    background-color: #cc2f2f;
+}
+
+#mensaje {
+    margin-top: 10px;
+    color: #00ff88;
+    font-weight: bold;
+}
+
+#error {
+    margin-top: 10px;
+    color: #ff4d4d;
+    font-weight: bold;
+}
+
+#datosGuardados, #contador {
+
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 15px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 600px;
+    box-shadow: 0 0 8px rgba(0,255,231,0.2);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #1e1e2f;
+    color: #00ffe7;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 15px;
+    box-shadow: 0 0 10px rgba(0, 255, 231, 0.1);
+}
+
+thead {
+    background-color: #00aaff;
+    color: white;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #333;
+}
+
+
+tr:hover {
+    background-color: #353547;
+}
