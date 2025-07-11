@@ -7,15 +7,15 @@ const datosGuardados = document.getElementById("datosGuardados");
 const contadorDiv = document.getElementById("contador");
 const btnLimpiar = document.getElementById("limpiar");
 
-// Cargar datos existentes de localStorage
+
 let datos = JSON.parse(localStorage.getItem("usuarios")) || [];
 let contador = parseInt(sessionStorage.getItem("contador")) || 0;
 
-// Mostrar datos previos y contador al iniciar
+
 renderTabla();
 actualizarContador();
 
-// Función para mostrar la tabla con todos los usuarios
+
 function renderTabla() {
   if (datos.length === 0) {
     datosGuardados.innerHTML = "<p>No hay datos guardados.</p>";
@@ -45,14 +45,14 @@ function renderTabla() {
   datosGuardados.innerHTML = tabla;
 }
 
-// Función para actualizar contador de interacciones
+
 function actualizarContador() {
   contador += 1;
   sessionStorage.setItem("contador", contador);
   contadorDiv.textContent = `Has interactuado ${contador} vez/veces en esta sesión.`;
 }
 
-// Evento de envío del formulario
+
 formulario.addEventListener("submit", (e) => {
   e.preventDefault();
 
@@ -65,7 +65,6 @@ formulario.addEventListener("submit", (e) => {
     return;
   }
 
-  // Agregar nuevo usuario
   datos.push({ nombre, edad });
   localStorage.setItem("usuarios", JSON.stringify(datos));
 
@@ -80,7 +79,6 @@ formulario.addEventListener("submit", (e) => {
   actualizarContador();
 });
 
-// Evento para limpiar datos
 btnLimpiar.addEventListener("click", () => {
   localStorage.removeItem("usuarios");
   sessionStorage.removeItem("contador");
@@ -93,4 +91,4 @@ btnLimpiar.addEventListener("click", () => {
 
   renderTabla();
   actualizarContador();
-});
+}); 
